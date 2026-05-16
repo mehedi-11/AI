@@ -1,35 +1,28 @@
-# 🧠 AI Skeleton Model (Blank Slate)
+# 🎓 ELINA: Exam Instructor AI (Multi-Modal with Voice)
 
-This project provides a foundational **Deep Learning AI** model built from scratch using Python and PyTorch. It starts with **zero knowledge** and is designed to learn patterns through data.
+This is a comprehensive AI solution for automated exam proctoring and student assistance. It features **Vision** for seeing, **Transformer Logic** for thinking, and **Voice Synthesis** for speaking.
+
+## ✨ Core Features
+1.  **AI Proctoring**: Monitors students via video/camera and issues **verbal warnings** if cheating is detected.
+2.  **Voice Interaction**: Speaks to students and teachers using a human-like voice for instructions and alerts.
+3.  **Dynamic Questioning**: Generates unique question patterns for every exam session.
+4.  **Personalized Analytics**: Analyzes student performance and verbally summarizes improvement reports.
 
 ## 📁 Project Structure
-- **`model.py`**: The Neural Network architecture (The Skeleton).
-- **`brain.py`**: The learning logic and weight updates (The Intelligence).
-- **`example_usage.py`**: A demonstration of the AI learning basic math.
-- **`requirements.txt`**: Necessary libraries (`torch`, `numpy`).
+- **`neural_network_core.py`**: Multi-modal architecture (CNN + Transformer).
+- **`learning_engine.py`**: Training logic with integrated **Voice Engine (pyttsx3)**.
+- **`main_application.py`**: The demo script with voice greetings and instructions.
+- **`requirements.txt`**: Libraries (`torch`, `torchvision`, `opencv-python`, `pyttsx3`).
 
-## 🚀 How to Run
-To see the AI learn locally:
+## 🚀 How to Execute
+To hear the AI in action:
 ```powershell
-python example_usage.py
+python main_application.py
 ```
 
-## ❓ What is this AI?
-- **Is it a real AI?** Yes. It uses Artificial Neurons and Backpropagation (the same technology behind major AIs).
-- **Does it know anything?** No. It is a "Skeleton." It only becomes smart after you train it with your own dataset.
-- **Can it write code?** No. This model is built for **Numerical Data** and **Pattern Recognition**. To write code, you would need a "Transformer" model (like GPT), which is much larger.
-
-## 📊 Best Use Cases
-This model is perfect for learning from:
-1. **Financial Data**: Predicting prices or trends.
-2. **Classifications**: Categorizing data based on features.
-3. **Mathematical Patterns**: Discovering complex logic between numbers.
-
-## ☁️ Google Colab Training
-To train this AI with your own large dataset:
-1. Upload `model.py` and `brain.py` to your Colab session.
-2. Use the `AIBrain.learn(inputs, targets)` method in your training loop.
-3. See the [Colab Guide](C:\Users\MalishaEdu IT\.gemini\antigravity\brain\3639b5bc-7cc3-49d9-850c-232a7746ea19\colab_guide.md) for more details.
+## 🛠️ Important Notes
+- **Voices**: You can change the voice gender and speed in the `AIBrain.__init__` method in `learning_engine.py`.
+- **Training**: The AI starts with a random voice logic. Train it with specific datasets to make its decision-making (proctoring/analytics) more accurate.
 
 ---
-*Created with ❤️ for self-learning exploration.*
+*Bridging the gap between automated integrity and interactive education.*
