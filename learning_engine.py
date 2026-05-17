@@ -17,7 +17,11 @@ class AIBrain:
         self.text_loss_fn = nn.CrossEntropyLoss()
 
     def speak(self, text):
-        """Convert text to human female voice and play using a robust VBScript approach."""
+        """Convert text to human female voice and play in background without blocking."""
+        threading.Thread(target=self._speak, args=(text,), daemon=True).start()
+
+    def _speak(self, text):
+        """Internal method to handle the actual TTS and VBScript playback."""
         print(f"ELINA: {text}")
         try:
             tts = gTTS(text=text, lang='en', slow=False)

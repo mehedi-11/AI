@@ -23,6 +23,7 @@ class ExamInstructorAI(nn.Module):
             nn.Conv2d(32, 64, kernel_size=3, stride=2, padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(),
+            nn.MaxPool2d(2),
             nn.Flatten(),
             nn.Linear(64 * 14 * 14, embed_size) # Feature vector for activity detection
         )
